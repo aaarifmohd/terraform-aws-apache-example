@@ -61,7 +61,7 @@ resource "aws_security_group" "cloud-init-sg" {
         from_port = 22
         to_port = 22
         protocol = "tcp"
-        cidr_blocks = ["103.160.26.7/32"]
+        cidr_blocks = ["var.my_ip"]
         ipv6_cidr_blocks = []
         prefix_list_ids = []
         security_groups = []
