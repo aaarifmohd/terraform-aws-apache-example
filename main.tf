@@ -39,7 +39,7 @@ resource "aws_security_group" "cloud-init-sg" {
         from_port = 80
         to_port = 80
         protocol = "tcp"
-        cidr_blocks = ["103.160.26.7/32"]
+        cidr_blocks = ["var.my_ip"]
         ipv6_cidr_blocks = []
         prefix_list_ids = []
         security_groups = []
@@ -50,7 +50,7 @@ resource "aws_security_group" "cloud-init-sg" {
         from_port = 443
         to_port = 443
         protocol = "tcp"
-        cidr_blocks = ["103.160.26.7/32"]
+        cidr_blocks = ["var.my_ip"]
         ipv6_cidr_blocks = []
         prefix_list_ids = []
         security_groups = []
