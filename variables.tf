@@ -3,4 +3,5 @@ variable "vpc_id" {
 }
 variable "my_ip" {
     type = string
+    description = "my machine IP"
 }
