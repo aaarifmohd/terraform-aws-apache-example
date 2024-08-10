@@ -97,4 +97,5 @@ resource "aws_instance" "my-server" {
     tags = {
       Name = "cloud-module-server"
     }
+    #test
 }
